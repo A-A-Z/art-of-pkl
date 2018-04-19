@@ -1,26 +1,11 @@
-# gatsby-starter-default
-The default Gatsby starter.
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
+# artofpkl.com #
 
-## Install
+My art page.
 
-Make sure that you have the Gatsby CLI program installed:
-```sh
-npm install --global gatsby-cli
-```
+For more:
 
-And run from your CLI:
-```sh
-gatsby new gatsby-example-site
-```
+* [Facebook](https://www.facebook.com/artofpkl/)
+* [Instagram](https://www.instagram.com/artofpkl/)
 
-Then you can run it by:
-```sh
-cd gatsby-example-site
-npm run develop
-```
-
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+Created using Gatsby.

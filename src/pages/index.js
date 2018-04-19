@@ -2,12 +2,19 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const IndexPage = () => (
-  <div>
-    <h1>Hi people</h1>
-    <p>Test.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
-  </div>
+  <article>
+    <section>
+      About
+    </section>
+
+    <section>
+      Images
+    </section>
+
+    <section>
+      Info
+    </section>
+  </article>
 )
 
 export default IndexPage

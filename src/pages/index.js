@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'gatsby-link'
-
 import Img from 'gatsby-image'
 
 const IndexPage = (data) => (
@@ -12,7 +11,8 @@ const IndexPage = (data) => (
     <section>
       Images
       {data.props}
-      <Img sizes={data.data.imageOne.sizes} />
+      <Img resolutions={data.data.imageOne.resolutions} />
+      <Img resolutions={data.data.imageTwo.resolutions} />
     </section>
 
     <section>
@@ -30,10 +30,15 @@ const IndexPage = (data) => (
 export default IndexPage
 
 export const query = graphql`
-  query IndexQuery {
+  query BlurUpQuery {
     imageOne: imageSharp(id: { regex: "/hare.jpg/" }) {
-      sizes(maxWidth: 630) {
-        ...GatsbyImageSharpSizes
+      resolutions(width: 125, height: 125) {
+        ...GatsbyImageSharpResolutions
+      }
+    }
+    imageTwo: imageSharp(id: { regex: "/reach.jpg/" }) {
+      resolutions(width: 125, height: 125) {
+        ...GatsbyImageSharpResolutions
       }
     }
   }

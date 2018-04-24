@@ -1,6 +1,5 @@
 .main-container {
   background-color: $colour-main-bg;
-  color: $colour-text-main;
   margin: 0 auto;
   max-width: $size-main-width;
   text-align: left;
@@ -8,5 +7,56 @@
 
   .content {
     padding: 20px;
+  }
+
+  .content-block {
+    border: 1px solid #222;
+    margin-bottom: 50px;
+    padding: 20px;
+
+    &.promo {
+      border: 0;
+      text-align: center;
+
+      h2 {
+        font-size: 5rem;
+      }
+
+      h3 {
+        color: $colour-zambezi;
+        font-size: 2rem;
+      }
+    }
+
+    &.gallery {
+      border: 0;
+
+      .gallery-images {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+
+        }
+      }
+    }
+  }
+
+  .flex-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+
+    .flex-block {
+      flex-grow: 3;
+      margin: 10px 0;
+      min-width: 33%;
+    }
+  }
+
+  .google-map {
+    border: 0;
+    height: 300px;
+    width: 100%;
   }
 }

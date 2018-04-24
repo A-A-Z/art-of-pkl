@@ -2,42 +2,127 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Img from 'gatsby-image'
 
+// import FacebookIcon from '../assets/svg/facebook.svg'
+
+const googleMapUrl = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.962019525125!2d' +
+  '144.95957241580814!3d-37.767488739170915!2m3!1f0!2f0!3f0!3m2!1i1024!2i7' +
+  '68!4f13.1!3m3!1m2!1s0x6ad6434d28c5ce7b%3A0xb1fec0938929d909!2sSoma!5e0!3m2!1sen!2sau!4v1524118262628'
+
 const IndexPage = (data) => (
   <article className="content">
-    <section>
-      About
+
+    <section className='content-block promo'>
+      <h2>New Exhibtion</h2>
+      <h3>May 2nd - May 12th</h3>
     </section>
 
-    <section>
-      Images
-      {data.props}
-      <Img resolutions={data.data.imageOne.resolutions} />
-      <Img resolutions={data.data.imageTwo.resolutions} />
+    <section className='content-block'>
+
+      <h2>About Dehumanization</h2>
+
+      <p>
+        Our society rapidly transforms into a state where the connections we share with each other are increasingly faceless,
+        and with this we become the soulless vessels for other people’s projections.  Our collective fears, shames and hate
+        only grow and in time these mindsets give birth to monsters.
+      </p>
+
+      <p>
+        In this collection of works Paul K Lynch depicts figures stripped of their tools for emotional connection, becoming little
+        more than subhumans.  Its goal is to shine a light on what we all try to hide in the shadows of our minds, both our external
+        projections and our internal fears.
+      </p>
+
+      <p>
+        This exhibition is a collection of work spanning over five years with pieces in oils and acrylic on large canvases.
+      </p>
+
+
     </section>
 
-    <section>
-      Info<br />
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.962019525125!2d144.95957241580814!3d-37.767488739170915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6434d28c5ce7b%3A0xb1fec0938929d909!2sSoma!5e0!3m2!1sen!2sau!4v1524118262628"
-        width='600'
-        height='450'
-        frameBorder='0'
-        style={{ border:0 }} />
+    <section className='content-block gallery'>
+      <div className='gallery-images'>
+        <Img resolutions={data.data.imageOne.resolutions} />
+        <Img resolutions={data.data.imageTwo.resolutions} />
+        <Img resolutions={data.data.imageOne.resolutions} />
+      </div>
+    </section>
+
+    <section className='content-block'>
+      <h2>Details</h2>
+
+      <div className='flex-blocks'>
+
+        <div className='flex-block'>
+          <h3>Exhibition Dates</h3>
+
+          <p>
+            2nd of May till 12th of May<br />
+            Wednesday - Saturday, 11am - 5pm
+          </p>
+        </div>
+
+        <div className='flex-block'>
+          <h3>Opening Event</h3>
+
+          <p>
+            Friday 4th of May, 6pm till 9pm<br />
+            <a href="https://www.facebook.com/events/617417728608812/">Facebook Event</a>
+          </p>
+        </div>
+
+        <div className='flex-block'>
+          <h3>Where</h3>
+
+          <p>
+            <address>
+              <strong>Soma Gallery</strong><br />
+              421 sydney rd, Bunswick
+            </address>
+          </p>
+        </div>
+
+        <div className='flex-block'>
+          <iframe
+            className='google-map'
+            src={googleMapUrl}
+            frameBorder='0'
+          />
+        </div>
+
+      </div>
+    </section>
+
+    <section className='content-block'>
+      <h2>Find more</h2>
+
+      <div className='flex-blocks'>
+
+        <div className='flex-block'>
+          facebook
+        </div>
+
+        <div className='flex-block'>
+          Indster
+        </div>
+
+      </div>
+
     </section>
   </article>
 )
+// <FacebookIcon />
 
 export default IndexPage
 
 export const query = graphql`
   query BlurUpQuery {
     imageOne: imageSharp(id: { regex: "/hare.jpg/" }) {
-      resolutions(width: 125, height: 125) {
+      resolutions(width: 250, height: 250) {
         ...GatsbyImageSharpResolutions
       }
     }
     imageTwo: imageSharp(id: { regex: "/reach.jpg/" }) {
-      resolutions(width: 125, height: 125) {
+      resolutions(width: 250, height: 250) {
         ...GatsbyImageSharpResolutions
       }
     }

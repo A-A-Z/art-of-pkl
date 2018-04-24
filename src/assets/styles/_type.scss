@@ -1,11 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 
 body {
-  font-size: 18px;
+  color: $colour-text-main;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 h1,
 h2,
 h3,
 h4 {
+  color: $colour-text-heading;
+  font-weight: 600;
   margin: 0;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.2rem;
 }

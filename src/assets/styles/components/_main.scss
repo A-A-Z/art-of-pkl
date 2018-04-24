@@ -60,4 +60,25 @@
     height: 300px;
     width: 100%;
   }
+
+  .social-link {
+    align-items: center;
+    display: flex;
+    font-size: 1.1rem;
+    text-decoration: none;
+
+    .svg-icon {
+      $size: 22px;
+
+      fill: $colour-white;
+      height: $size;
+      margin-right: 6px;
+      transition: fill 0.2s ease;
+      width: $size;
+    }
+
+    &:hover .svg-icon {
+      fill: $colour-del-rio;
+    }
+  }
 }

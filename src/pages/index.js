@@ -4,6 +4,7 @@ import Img from 'gatsby-image'
 
 import FacebookIcon from '../assets/svg/facebook.svg'
 import InstagramIcon from '../assets/svg/instagram.svg'
+import EmailIcon from '../assets/svg/email.svg'
 
 const googleMapUrl = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.962019525125!2d' +
   '144.95957241580814!3d-37.767488739170915!2m3!1f0!2f0!3f0!3m2!1i1024!2i7' +
@@ -11,7 +12,7 @@ const googleMapUrl = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153
 
 const IndexPage = (data) => (
   <article className="content">
-    
+
     <section className='content-block promo'>
       <h2>New Exhibtion</h2>
       <h3>May 2nd - May 12th</h3>
@@ -66,7 +67,7 @@ const IndexPage = (data) => (
           <h3>Opening Event</h3>
 
           <p>
-            Friday 4th of May, 6pm till 9pm<br />
+            <time datetime="2018-05-04 18:00">Friday 4th of May, 6pm till 9pm</time><br />
             <a href="https://www.facebook.com/events/617417728608812/">Facebook Event</a>
           </p>
         </div>
@@ -94,19 +95,25 @@ const IndexPage = (data) => (
     <section className='content-block'>
       <h2>Find more</h2>
 
+      <h3>Paul K Lynch</h3>
+
       <div className='flex-blocks'>
 
         <div className='flex-block'>
-        <FacebookIcon className='svg-icon' />
-          facebook
+          <a href='test.html' className='social-link'><FacebookIcon className='svg-icon' /><span>Facebook @artofpkl</span></a>
         </div>
 
         <div className='flex-block'>
-          <InstagramIcon className='svg-icon' />
-          InstagramIcon
+          <a href='test.html' className='social-link'><InstagramIcon className='svg-icon' /><span>Instagram @artofpkl</span></a>
+        </div>
+
+        <div className='flex-block'>
+          <a href='test.html' className='social-link'><EmailIcon className='svg-icon' /><span>paul@artofpkl.com</span></a>
         </div>
 
       </div>
+
+      <h3>Soma Gallery</h3>
 
     </section>
   </article>

@@ -7,15 +7,18 @@ html {
   text-align: center;
 }
 
+a {
+  color: $colour-white;
+  transition: color 0.2s ease;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $colour-del-rio;
+  }
+}
+
 address {
   font-style: normal;
   margin: 14px 0;
-}
-
-.svg-icon {
-  $size: 16px;
-
-  fill: $colour-white;
-  height: $size;
-  width: $size;
 }

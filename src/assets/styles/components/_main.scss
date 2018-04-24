@@ -1,5 +1,6 @@
 .main-container {
   background-color: $colour-main-bg;
+  display: block;
   margin: 0 auto;
   max-width: $size-main-width;
   text-align: left;
@@ -19,7 +20,7 @@
       text-align: center;
 
       h2 {
-        font-size: 5rem;
+        font-size: 4rem;
       }
 
       h3 {

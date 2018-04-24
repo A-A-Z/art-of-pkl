@@ -1,3 +1,14 @@
 .hero-banner {
   background-color: $colour-banner-placeholder;
+  height: 470px;
+  position: relative;
+  width: 100%;
+
+  .banner-title {
+    height: 83px;
+    left: 50px;
+    position: absolute;
+    top: 180px;
+    width: 800px;
+  }
 }

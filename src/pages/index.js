@@ -2,7 +2,8 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Img from 'gatsby-image'
 
-// import FacebookIcon from '../assets/svg/facebook.svg'
+import FacebookIcon from '../assets/svg/facebook.svg'
+import InstagramIcon from '../assets/svg/instagram.svg'
 
 const googleMapUrl = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.962019525125!2d' +
   '144.95957241580814!3d-37.767488739170915!2m3!1f0!2f0!3f0!3m2!1i1024!2i7' +
@@ -10,7 +11,7 @@ const googleMapUrl = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153
 
 const IndexPage = (data) => (
   <article className="content">
-
+    
     <section className='content-block promo'>
       <h2>New Exhibtion</h2>
       <h3>May 2nd - May 12th</h3>
@@ -73,12 +74,10 @@ const IndexPage = (data) => (
         <div className='flex-block'>
           <h3>Where</h3>
 
-          <p>
-            <address>
-              <strong>Soma Gallery</strong><br />
-              421 sydney rd, Bunswick
-            </address>
-          </p>
+          <address>
+            <strong>Soma Gallery</strong><br />
+            421 sydney rd, Bunswick
+          </address>
         </div>
 
         <div className='flex-block'>
@@ -98,11 +97,13 @@ const IndexPage = (data) => (
       <div className='flex-blocks'>
 
         <div className='flex-block'>
+        <FacebookIcon className='svg-icon' />
           facebook
         </div>
 
         <div className='flex-block'>
-          Indster
+          <InstagramIcon className='svg-icon' />
+          InstagramIcon
         </div>
 
       </div>

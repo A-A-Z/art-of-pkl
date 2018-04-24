@@ -1,8 +1,9 @@
 import React from 'react'
+import Logo from '../assets/svg/logo_white.svg'
 
 const Banner = () => (
   <div className='hero-banner'>
-    <h1>Page Banner</h1>
+    <Logo />
   </div>
 )
 

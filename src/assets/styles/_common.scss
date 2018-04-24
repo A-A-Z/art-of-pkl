@@ -9,4 +9,13 @@ html {
 
 address {
   font-style: normal;
+  margin: 14px 0;
+}
+
+.svg-icon {
+  $size: 16px;
+
+  fill: $colour-white;
+  height: $size;
+  width: $size;
 }

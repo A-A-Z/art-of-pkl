@@ -8,6 +8,7 @@
     "gatsby-cli": "^1.1.50",
     "gatsby-image": "^1.0.47",
     "gatsby-link": "^1.6.40",
+    "gatsby-plugin-favicon": "^2.1.1",
     "gatsby-plugin-react-helmet": "^2.0.10",
     "gatsby-plugin-react-svg": "^1.1.1",
     "gatsby-plugin-sharp": "^1.6.43",

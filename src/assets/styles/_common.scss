@@ -18,6 +18,12 @@ a {
   }
 }
 
+hr {
+  border: 0;
+  border-bottom: 1px solid $colour-mine-shaft;
+  margin: 25px 0;
+}
+
 address {
   font-style: normal;
   margin: 14px 0;

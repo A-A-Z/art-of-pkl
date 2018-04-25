@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import Banner from '../components/banner'
 import '../assets/styles/app.scss'
 
 const Layout = ({ children, data }) => (
@@ -12,14 +11,12 @@ const Layout = ({ children, data }) => (
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
+        { name: 'viewport', content: 'width=device-width,initial-scale=1' }
       ]}
     />
 
     <main className='main-container'>
-      <section><Banner /></section>
-      <section>
-        {children()}
-      </section>
+      {children()}
     </main>
   </div>
 )

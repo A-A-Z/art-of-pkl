@@ -11,7 +11,7 @@
   }
 
   .content-block {
-    border: 1px solid #222;
+    border: 1px solid $colour-mine-shaft;
     margin-bottom: 50px;
     padding: 20px;
 
@@ -35,10 +35,6 @@
       .gallery-images {
         display: flex;
         justify-content: space-between;
-
-        img {
-
-        }
       }
     }
   }
@@ -79,6 +75,35 @@
 
     &:hover .svg-icon {
       fill: $colour-del-rio;
+    }
+  }
+
+  @media only screen and (max-width: ($size-main-width - 1)) {
+    .content-block {
+
+      &.promo {
+        h2 {
+          font-size: 2.5rem;
+        }
+        h3 {
+          font-size: 1.5rem;
+        }
+      }
+
+      &.gallery .gallery-images {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+        width: 250px;
+
+        &> * {
+          margin: 20px 0;
+        }
+      }
+
+      .flex-blocks .flex-block {
+        width: 100%;
+      }
     }
   }
 }

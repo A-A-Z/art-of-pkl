@@ -11,10 +11,38 @@
   }
 
   .banner-title {
-    height: 83px;
+    max-height: 83px;
     left: 50px;
     position: absolute;
     top: 180px;
-    width: 800px;
+    max-width: 800px;
+    z-index: 2;
+  }
+
+  .banner-img {
+    display: none;
+  }
+
+  @media only screen and (max-width: ($size-main-width - 1)) {
+    height: 270px;
+    overflow: hidden;
+
+    video {
+      display: none;
+    }
+
+    .banner-title {
+      left: 0;
+      padding: 20px;
+      top: 90px;
+    }
+
+    .banner-img {
+      display: block;
+      left: 50%;
+      margin-left: -450px;
+      position: absolute;
+      z-index: 1;
+    }
   }
 }

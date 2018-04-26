@@ -11,7 +11,8 @@ const Layout = ({ children, data }) => (
       meta={[
         { name: 'description', content: 'Artwork by Paul K Lynch' },
         { name: 'keywords', content: 'art' },
-        { name: 'viewport', content: 'width=device-width,initial-scale=1' }
+        { name: 'viewport', content: 'width=device-width,initial-scale=1' },
+        { name: 'google-site-verification', content: 'nrXxFZ57-4RiZRKvD_mT5INgQZUoGwQQWtOJSQhIb0U' }
       ]}
     />
 

@@ -132,11 +132,9 @@ const IndexPage = (data) => (
               <a href='https://www.instagram.com/artofpkl/' className='social-link'><InstagramIcon className='svg-icon' /><span>Instagram @artofpkl</span></a>
             </div>
 
-            {/*
             <div className='flex-block'>
               <a href='mailto:paul@artofpkl.com' className='social-link'><EmailIcon className='svg-icon' /><span>paul@artofpkl.com</span></a>
             </div>
-            */}
 
           </div>
 

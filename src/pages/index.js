@@ -9,9 +9,13 @@ import EmailIcon from '../assets/svg/email.svg'
 import Logo from '../assets/svg/logo_white.svg'
 import VideoMp4 from '../assets/video/banner.mp4'
 
+import PriceList from '../files/price_list_2018.pdf'
+
 const googleMapUrl = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.962019525125!2d' +
   '144.95957241580814!3d-37.767488739170915!2m3!1f0!2f0!3f0!3m2!1i1024!2i7' +
   '68!4f13.1!3m3!1m2!1s0x6ad6434d28c5ce7b%3A0xb1fec0938929d909!2sSoma!5e0!3m2!1sen!2sau!4v1524118262628'
+
+console.log('test', PriceList)
 
 const IndexPage = (data) => (
   <div>
@@ -61,6 +65,9 @@ const IndexPage = (data) => (
             Opening event will include live music by Finn Baulch
           </p>
 
+          <p className='price-list'>
+            <a href={PriceList} className='download-btn'>Download Price List</a>
+          </p>
 
         </section>
 

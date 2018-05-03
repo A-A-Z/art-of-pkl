@@ -1,0 +1,20 @@
+.download-btn {
+  $bg-colour: #b5a97e;
+
+  background-color: $bg-colour;
+  border-radius: 2px;
+  color: $colour-body-bg;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: lighten($bg-colour, 10%);
+    color: $colour-body-bg;
+    text-decoration: none;
+  }
+}
